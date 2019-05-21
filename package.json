@@ -1,0 +1,25 @@
+{
+  "name": "codeaid",
+  "main": "./lib/codeaid",
+  "version": "0.0.0",
+  "description": "Automates the tasks related to online problem solving like problem parsing, testing, fetching library code etc",
+  "keywords": [
+  ],
+  "activationCommands": {
+    "atom-workspace": "codeaid:toggle"
+  },
+  "repository": "https://github.com/rgkbitw/codeaid",
+  "license": "MIT",
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  },
+  "dependencies": {
+    "axios":"0.18.0",
+    "cheerio": "^1.0.0-rc.2",
+    "etch": "^0.12.6",
+    "file-normalize": "^1.1.2"
+  },
+  "deserializers": {
+    "codeaid/CodeaidView": "deserializeCodaidView"
+  }
+}
